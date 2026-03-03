@@ -36,7 +36,7 @@ Source: [Kaggle — NLP with Disaster Tweets](https://www.kaggle.com/competition
 
 
 
-SVM Tuned wins: highest test F1, smallest overfitting gap, and best probability calibration (correct class probability: 0.71).
+SVM Tuned wins: highest test F1
 
 ## Key Findings
 
