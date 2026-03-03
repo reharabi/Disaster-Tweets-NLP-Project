@@ -56,6 +56,14 @@ SVM Tuned wins: highest test F1
 ├── EXECUTIVE_SUMMARY.md                 # Non-technical project summary
 └── TECHNICAL_ANALYSIS.md                # Detailed technical deep-dive
 ```
+## 📁 Project Files
+
+| File | Description |
+|------|-------------|
+| [Disaster_Tweets_NLP_Project.ipynb](Disaster_Tweets_NLP_Project.ipynb) | Main analysis notebook |
+| [EXECUTIVE_SUMMARY.md](EXECUTIVE_SUMMARY.md) | Project summary |
+| [TECHNICAL_ANALYSIS.md](TECHNICAL_ANALYSIS.md) | Detailed technical analysis |
+| [Presentation](Disaster_Tweets_Presentation%202.key) | Project presentation |
 
 ## How to Run
 
