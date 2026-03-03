@@ -23,23 +23,26 @@ Source: [Kaggle — NLP with Disaster Tweets](https://www.kaggle.com/competition
 
 ## Approach
 
-**Preprocessing** — Cleaned tweets (removed URLs, @mentions, special characters, numbers), tokenized, removed stop words, applied POS-aware lemmatization, and removed 2 custom stop words ("amp", "get") that appeared frequently in both classes.
+**Preprocessing** — Cleaned tweets (set everything to lowercase, removed URLs, @mentions, special characters, numbers), tokenized, removed stop words, applied POS-aware lemmatization, and removed 2 custom stop words ("amp", "get") that appeared frequently in both classes.
 
 **Feature Extraction** — TF-IDF Vectorization (`max_features=5000`, `ngram_range=(1,2)`) wrapped in sklearn Pipelines to prevent data leakage.
 
 **Models Trained** — Logistic Regression, SVM (LinearSVC + CalibratedClassifierCV), and Random Forest, plus tuned versions of SVM and RF to address overfitting.
 
-**Evaluation** — F1 score as primary metric (handles class imbalance better than accuracy). Train AND test metrics reported for every model. 5-fold cross-validation for reliability.
+**Evaluation** — F1 score as primary metric (Recall in some cases). Train AND test metrics reported for every model. 5-fold cross-validation for reliability.
 
 ## Results
 
-| Model | Train F1 | Test F1 | Gap | CV F1 |
-|-------|----------|---------|-----|-------|
-| **SVM Tuned (C=0.1)** | **0.8296** | **0.7728** | **0.06** | **0.7402** |
+| Model | Train F1 | Test F1 | Gap | CV F1 | Train Recall | Test Recall | 
+|-------|----------|---------|-----|-------|--------------|-------------|
+| **SVM Tuned (C=0.1)** | **0.8296** | **0.7728** | **0.06** | **0.7402** | **0.
 | Logistic Regression | 0.8328 | 0.7718 | 0.06 | 0.7400 |
 | SVM Default | 0.9029 | 0.7629 | 0.14 | 0.7280 |
 | Random Forest | 0.9809 | 0.7563 | 0.22 | 0.7131 |
 | RF Tuned | 0.7589 | 0.7009 | 0.06 | 0.6341 |
+<img width="855" height="150" alt="Screenshot 2026-03-03 at 19 53 00" src="https://github.com/user-attachments/assets/435c3825-379c-48a7-a991-41c42c62a783" />
+
+
 
 SVM Tuned wins: highest test F1, smallest overfitting gap, and best probability calibration (correct class probability: 0.71).
 
