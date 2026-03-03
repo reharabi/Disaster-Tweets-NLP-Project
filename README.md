@@ -67,7 +67,7 @@ SVM Tuned wins: highest test F1
 ## How to Run
 
 1. Upload  [Disaster_Tweets_NLP_Project.ipynb](Disaster_Tweets_NLP_Project.ipynb) to [Google Colab](https://colab.research.google.com/)
-2. Upload `train.csv` from the [Kaggle competition](https://www.kaggle.com/competitions/nlp-getting-started) to your Google Drive
+2. Upload [train.csv](train(1).csv) from the [Kaggle competition](https://www.kaggle.com/competitions/nlp-getting-started) to your Google Drive
 3. Update the file path in cell 4 to match your Drive location
 4. Run all cells sequentially
 
