@@ -51,7 +51,6 @@ SVM Tuned wins: highest test F1
 ```
 ├── Disaster_Tweets_NLP.ipynb            # Full notebook with code, outputs, and analysis
 ├── Disaster_Tweets_Presentation.pptx    # 14-slide presentation deck
-├── Disaster_Tweets_Talking_Script.docx  # Slide-by-slide speaking notes
 ├── README.md                            # This file
 ├── EXECUTIVE_SUMMARY.md                 # Non-technical project summary
 └── TECHNICAL_ANALYSIS.md                # Detailed technical deep-dive
@@ -67,7 +66,7 @@ SVM Tuned wins: highest test F1
 
 ## How to Run
 
-1. Upload `Disaster_Tweets_NLP.ipynb` to [Google Colab](https://colab.research.google.com/)
+1. Upload  [Disaster_Tweets_NLP_Project.ipynb](Disaster_Tweets_NLP_Project.ipynb) to [Google Colab](https://colab.research.google.com/)
 2. Upload `train.csv` from the [Kaggle competition](https://www.kaggle.com/competitions/nlp-getting-started) to your Google Drive
 3. Update the file path in cell 4 to match your Drive location
 4. Run all cells sequentially
