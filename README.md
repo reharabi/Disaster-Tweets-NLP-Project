@@ -86,4 +86,4 @@ With only 7,600 tweets, traditional ML models (SVM, LR) perform comparably to de
 
 ## Author
 
-**Reha** — Masterschool, Data Science & Machine Learning
+**Reha Rabi** — MSIT, Data Science Course
