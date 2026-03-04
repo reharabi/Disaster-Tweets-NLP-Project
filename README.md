@@ -1,6 +1,6 @@
 # Disaster Tweets Classification — NLP Project
 
-An NLP binary classification project that predicts whether a tweet is about a **real disaster** or not, using traditional machine learning on the Kaggle "Natural Language Processing with Disaster Tweets" dataset.
+An NLP binary classification project that predicts whether a tweet is about a **real disaster** or **not**, using traditional machine learning on the Kaggle "Natural Language Processing with Disaster Tweets" dataset.
 
 **Best Model: SVM Tuned (C=0.1) — Test F1: 0.7728**
 
